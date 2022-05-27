@@ -1,0 +1,625 @@
+/* Seccion de Header */
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #5095F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.SkewedOne {
+    position: absolute;
+    bottom: -100%; 
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewY(-15deg);
+    transform-origin: top left;
+}
+
+.SkewedTwo {
+    position: absolute;
+    bottom: -100%; 
+    right: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: skewY(15deg);
+    transform-origin: top right;
+}
+
+.bg .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.bg .logo-text h2 {
+    position: relative;
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+.bg .logo-text img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* Texto Versiculo */
+.content-texto {
+    width: 100%;
+    height: auto;
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto {
+    padding: 30px;
+    text-align: center;
+}
+
+.texto p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.texto small {
+    font-size: 30px;
+    color: #cecece;
+}
+
+/* Carrusel */
+.avisos {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.avisos .bgPulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5095F5;
+}
+
+.avisos .bgPulse span {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.avisos .bgPulse span:nth-child(2n+1) {
+    background: transparent;
+    border: 5px solid #fff;
+}
+
+.avisos .bgPulse span:nth-child(1) {
+    top: 50%;
+    left: 20%;
+    animation: animate 10s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(2) {
+    top: 80%;
+    left: 25%;
+    animation: animate 12s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(3) {
+    top: 10%;
+    left: 65%;
+    animation: animate 15s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(4) {
+    top: 50%;
+    left: 70%;
+    animation: animate 6s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(5) {
+    top: 10%;
+    left: 30%;
+    animation: animate 9s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(6) {
+    top: 80%;
+    left: 90%;
+    animation: animate 8s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(7) {
+    top: 80%;
+    left: 5%;
+    animation: animate 5s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(8) {
+    top: 35%;
+    left: 80%;
+    animation: animate 14s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(9) {
+    top: 5%;
+    left: 5%;
+    animation: animate 11s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(10) {
+    top: 25%;
+    left: 90%;
+    animation: animate 10s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(11) {
+    top: 90%;
+    left: 70%;
+    animation: animate 10s linear infinite;
+}
+
+.avisos .bgPulse span:nth-child(12) {
+    top: 35%;
+    left: 10%;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {transform: scale(0) translateY(0) rotate(0deg); opacity: 1;}
+    100% {transform: scale(1) translateY(-100px) rotate(360deg); opacity: 0;}
+}
+
+.swiper {
+    width: 500px;
+    height: 500px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Informacion sobre nosotros */
+.info {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 40px;
+    padding: 20px;
+    background-image: url(../images/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+}
+
+.info .text-info {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info .text-info h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.info .text-info p {
+    font-size: 30px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.info .text-info a {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    text-decoration: none;
+    color: #ff0000;
+    transition: .5s all ease;
+}
+
+.info .text-info a:hover {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.info .img-info {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.info .img-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s all ease;
+}
+
+.info .img-info:hover img {
+    transform: scale(1.15);
+}
+
+/* Seccion de Pastores */
+.pastores {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-top: 5px solid #252850;
+    border-bottom: 5px solid #252850;
+}
+  
+.pastores h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.pastores .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.pastores .cards .card {
+    position: relative;
+    width: 340px;
+    height: 450px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 3px 5px rgba(73, 69, 52, 0.4);
+    overflow: hidden;
+}
+
+.pastores .cards .card .circle {
+    position: absolute;
+    top: -190px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 500px;
+    background-color: #333;
+    clip-path: circle();
+}
+
+.pastores .cards .card .circle::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: 0 0 0 20px #5095F5;
+    opacity: 0.7;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.pastores .cards .card .circle .imgBx {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 310px;
+}
+
+.pastores .cards .card .circle .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.pastores .cards .card .content-card {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 140px;
+    padding: 20px 30px;
+}
+
+.pastores .cards .card .content-card h3 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.pastores .cards .card .content-card p {
+    font-size: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    /* Seccion de Header */
+    .bg {
+        height: 600px;
+    }
+
+    .bg .logo-text h2 {
+        margin-bottom: 40px;
+        font-size: 2.5em;
+    }
+
+    .bg .logo-text img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    /* Texto Versiculo */
+    .content-texto {
+        margin-top: 40px;
+    }
+
+    .texto p {
+        font-size: 30px;
+    }
+
+    .texto small {
+        font-size: 20px;
+    }
+
+    /* Informacion sobre nosotros */
+    .info {
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .info .text-info {
+        height: 50%;
+        margin-right: 0;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .info .text-info h2 {
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+
+    .info .text-info p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info .img-info {
+        height: 50%;
+    }
+
+    .info .img-info img {
+        object-fit: fill;
+    }
+
+    /* Seccion de Pastores */    
+    .pastores .cards .card {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Seccion de Header */
+    .bg {
+        height: 400px;
+    }
+
+    .bg .logo-text h2 {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+
+    .bg .logo-text img {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Carrusel */
+    .avisos .bgPulse span {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Texto Versiculo */
+    .content-texto {
+        margin-top: 30px;
+    }
+
+    .texto {
+        padding: 20px;
+    }
+
+    .texto p {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .texto small {
+        font-size: 15px;
+    }
+
+    /* Informacion sobre nosotros */
+    .info {
+        padding: 10px;
+        height: 650px;
+    }
+
+    .info .text-info h2 {
+        font-size: 20px;
+    }
+
+    .info .text-info p {
+        font-size: 15px;
+    }
+
+    .info .text-info a {
+        padding: 5px;
+    }
+
+    /* Pastores */
+    .pastores .cards .card {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .pastores .cards .card .circle {
+        top: -120px;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .pastores .cards .card .circle .imgBx {
+        width: 300px;
+    }
+    
+    .pastores .cards .card .content-card {
+        height: 120px;
+        padding: 20px;
+    }
+    
+    .pastores .cards .card .content-card h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:370px) {
+    /* Seccion de Header */
+    .bg {
+        height: 300px;
+    }
+
+    .bg .logo-text h2 {
+        font-size: 1em;
+    }
+
+    /* Carrusel */
+    .swiper {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Texto Versiculo */
+    .texto {
+        padding: 15px;
+    }
+
+    .texto p {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .texto small {
+        font-size: 10px;
+    }
+
+    /* Informacion sobre nosotros */
+    .info {
+        height: 550px;
+        padding: 5px;
+    }
+
+    .info .text-info {
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .info .text-info h2 {
+        font-size: 20px;
+    }
+
+    .info .text-info p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .info .img-info {
+        margin-bottom: 20px;
+    }
+
+    /* Seccion de Pastores */
+    .pastores {
+        padding: 10px;
+    }
+    
+    .pastores h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .pastores .cards {
+        margin-bottom: 10px;
+    }    
+
+    .pastores .cards .card {
+        width: 250px;
+        height: 350px;
+    }
+    
+    .pastores .cards .card .circle {
+        top: -50px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .pastores .cards .card .circle .imgBx {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .pastores .cards .card .content-card {
+        height: 100px;
+        padding: 10px;
+    }
+}

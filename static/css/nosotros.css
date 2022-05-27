@@ -1,0 +1,62 @@
+/* Header Nosotros */
+.header-nosotros {
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
+.header-nosotros .tit-nosotros {
+    width: 100%;
+    height: 30%;
+    background-color: #5095F5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.header-nosotros .tit-nosotros h2 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.header-nosotros .flex-content {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+.header-nosotros .flex-content .img-nosotros {
+    width: 40%;
+    height: 100%;
+}
+
+.header-nosotros .flex-content .img-nosotros div {
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    border: 5px solid #5095F5;
+    overflow: hidden;
+}
+
+.header-nosotros .flex-content .img-nosotros div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-nosotros .flex-content .text-nosotros {
+    width: 60%;
+    height: 100%;
+}
+
+.header-nosotros .flex-content .text-nosotros p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Seccion de Nosotros */

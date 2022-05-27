@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="contactos">
+        <h2>Contáctanos</h2>
+        <div class="atras"></div>
+
+        <div class="contacto">
+            <div class="icon-contacto" style="--i:#00BC37">
+                <i class="bx bx-phone"></i>
+            </div>
+
+            <div class="content-contacto">
+                <h3>Teléfono</h3>
+                <p>Hno. David</p>
+                <p>55-5555-5555</p>
+            </div>
+        </div>
+        
+        <div class="contacto">
+            <div class="icon-contacto" style="--i:#FA0700">
+                <i class="bx bx-map"></i>
+            </div>
+
+            <div class="content-contacto">
+                <h3>Dirección</h3>
+                <p>ICARE, Calle Virginia 125, Nativitas, Benito Juárez, 03500 Ciudad de México, CDMX</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ubicacion">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.738652279119!2d-99.14044268529746!3d19.38046578691397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fe56cc17893d%3A0x2ae854b38339c511!2sC.%20Virginia%20125%2C%20Nativitas%2C%20Benito%20Ju%C3%A1rez%2C%2003500%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses!2smx!4v1653197991778!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+{% endblock %}

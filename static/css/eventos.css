@@ -1,0 +1,337 @@
+/* Header */
+.header-eventos {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.header-eventos .banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-eventos .banner video {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-eventos .banner h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5095F5;
+    font-size: 20vw;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 700px;
+    mix-blend-mode: screen;
+}
+
+/* Seccion carrusel eventos */
+.carrusel-eventos {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    background: #232526; 
+    background: -webkit-linear-gradient(to right, #414345, #232526); 
+    background: linear-gradient(to right, #414345, #232526); 
+}
+
+.carrusel-eventos .swiper-container {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-x: hidden;
+}
+
+.carrusel-eventos .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.carrusel-eventos .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.carrusel-eventos .swiper-pagination-bullet-active {
+    background-color: #fff;
+}
+
+/* Seccion Eventos */
+.eventos {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.eventos .card-evento {
+    position: relative;
+    width: 400px;
+    padding-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0 21px 35px rgb(0 0 0 / .10);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.eventos .card-evento .img-evento {
+    width: 100%;
+    height: 300px;
+}
+
+.eventos .card-evento .img-evento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.eventos .card-evento .text-evento {
+    padding: 15px;
+}
+
+.eventos .card-evento .text-evento h2 {
+    font-size: 32px;
+}
+
+.eventos .card-evento .text-evento p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.eventos .card-evento .text-evento .more-btn {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 8;
+    font-size: 20px;
+    transition: all ease 0.5s;
+}
+
+.eventos .card-evento .text-evento .more-btn i {
+    transition: all ease .5s;
+}
+
+.eventos .card-evento .text-evento .more-btn.activo i {
+    transform: rotate(45deg);
+    transition: all ease .5s;
+}
+
+.eventos .card-evento .more-text-evento {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: -100%;
+    left: 0;
+    background-color: #5095F5;
+    padding: 20px;
+    overflow-y: auto;
+    transition: all ease 0.7s;
+}
+
+.eventos .card-evento .more-text-evento.active {
+    bottom: 0;
+}
+
+.eventos .card-evento .more-text-evento::-webkit-scrollbar {
+    width: 7px;
+    background-color: #5095F5;
+}
+
+.eventos .card-evento .more-text-evento::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px; 
+}
+
+.eventos .card-evento .more-text-evento h2 {
+    color: #fff;
+}
+
+.eventos .card-evento .more-text-evento p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    /* Header */
+    .header-eventos {
+        height: 600px;
+    }
+
+    .header-eventos .banner h2 {
+        font-size: 18vw;
+        line-height: 600px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        background-color: green;
+    }
+
+    /* Header */
+    .header-eventos {
+        height: 300px;
+    }
+
+    .header-eventos .banner h2 {
+        font-size: 15vw;
+        line-height: 300px;
+    }
+
+    /* Seccion carrusel eventos */
+    .carrusel-eventos .swiper-slide {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Seccion Eventos */
+    .eventos {
+        padding: 20px;
+    }
+
+    .eventos .card-evento {
+        width: 300px;
+        height: 400px;
+        padding-bottom: 10px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .eventos .card-evento .img-evento {
+        height: 200px;
+    }
+
+    .eventos .card-evento .text-evento {
+        padding: 10px;
+    }
+
+    .eventos .card-evento .text-evento h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .eventos .card-evento .text-evento p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .eventos .card-evento .more-text-evento {
+        padding: 15px;
+    }
+
+    .eventos .card-evento .more-text-evento h2 {
+        text-align: center;
+    }
+
+    .eventos .card-evento .more-text-evento p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media (max-width:370px) {
+    .container {
+        background-color: blue;
+    }
+
+    /* Header */
+    .header-eventos {
+        height: 250px;
+    }
+
+    .header-eventos .banner h2 {
+        line-height: 250px;
+    }
+
+    /* Seccion carrusel eventos */
+    .carrusel-eventos {
+        margin-bottom: 10px;
+    }
+
+    .carrusel-eventos .swiper-slide {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Seccion Eventos */
+    .eventos {
+        padding: 10px;
+    }
+
+    .eventos .card-evento {
+        height: 300px;
+    }
+
+    .eventos .card-evento .img-evento {
+        height: 150px;
+    }
+
+    .eventos .card-evento .text-evento h2 {
+        font-size: 20px;
+    }
+
+    .eventos .card-evento .text-evento p {
+        font-size: 12px;
+    }
+
+    .eventos .card-evento .more-text-evento {
+        padding: 10px;
+    }
+
+    .eventos .card-evento .text-evento .more-btn {
+        width: 80px;
+        height: 80px;
+        bottom: -50px;
+        line-height: 50px;
+        font-size: 18px;
+    }
+
+    .eventos .card-evento .more-text-evento h2 {
+        font-size: 20px;
+    }
+
+    .eventos .card-evento .more-text-evento p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}

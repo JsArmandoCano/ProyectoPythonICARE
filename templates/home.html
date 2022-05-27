@@ -1,0 +1,141 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="bg">
+        <div class="logo-text">
+            <h2>Iglesia Cristiana Autónoma Roca Eterna</h2>
+            <img src="{% static 'images/logoIcare.jpg' %}" alt="Logo Icare">
+        </div>
+        <span class="SkewedOne"></span>
+        <span class="SkewedTwo"></span>
+    </section>
+    
+    <section class="content-texto">
+        <div class="texto">
+            <hr>
+            <p>Mira que te mando que te esfuerces y seas valiente: no temas ni desmayes, porque Jehová tu Dios será contigo en donde quiera que fueres.</p>
+            <small>Josué 1:9</small>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Swiper -->
+    <section class="avisos">
+        <div class="bgPulse">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="text-info">
+            <h2>¿Quiénes Somos?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis iusto. Libero dicta obcaecati quod harum enim quibusdam, autem nulla cumque esse ipsam commodi unde iure voluptas optio, consequatur minima.</p>
+            <a href="{% url 'nosotros' %}">Leer más ...</a>
+        </div>
+        <div class="img-info">
+            <img src="{% static 'images/iglesia-icare.jpeg' %}" alt="Iglesia">
+        </div>
+    </section>
+
+    <section class="pastores">
+        <h2>Pastores</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="circle">
+                    <div class="imgBx">
+                        <img src="{% static 'images/pastor1.jpeg' %}" alt="Pastor">
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>Hector Roldán</h3>
+                    <p>Pastor</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="circle">
+                    <div class="imgBx">
+                        <img src="{% static 'images/pastor3.jpeg' %}" alt="Pastor">
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>David Silva</h3>
+                    <p>Pastor</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="circle">
+                    <div class="imgBx">
+                        <img src="{% static 'images/pastor2.jpeg' %}" alt="Pastor">
+                    </div>
+                </div>
+                <div class="content-card">
+                    <h3>Miguel Cano</h3>
+                    <p>Pastor</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <script>
+        const SkewedOne = document.querySelector('.SkewedOne');
+        const SkewedTwo = document.querySelector('.SkewedTwo');
+        window.addEventListener('scroll', function() {
+            const value1 = -15 + window.scrollY/45;
+            const value2 = 15 + window.scrollY/-45;
+            SkewedOne.style.transform = "skewY(" + value1 + "deg)";
+            SkewedTwo.style.transform = "skewY(" + value2 + "deg)";
+        })
+
+         var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          }); 
+    </script>
+{% endblock %}

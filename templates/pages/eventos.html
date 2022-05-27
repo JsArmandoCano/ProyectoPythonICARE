@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <header class="header-eventos">
+        <div class="banner">
+            <video autoplay muted loop>
+                <source src="{% static 'videos/videoEvents.mp4' %}" type="video/mp4">
+            </video>
+            <h2>Eventos</h2>
+        </div>
+    </header>
+
+    <!-- Swiper -->
+    <section class="carrusel-eventos">
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="eventos">
+        {% if evento %}
+            {% for eventos in evento %}
+                <div class="card-evento">
+
+                    <div class="img-evento">
+                        <img src="{{ eventos.evento_image.url }}" alt="Evento">
+                    </div>
+
+                    <div class="text-evento">
+                        <h2>{{ eventos.evento_name }}</h2>
+                        <p>{{ eventos.description_1 }}</p>
+                        <div class="more-btn">
+                            <i class="bx bx-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="more-text-evento">
+                        <h2>{{ eventos.evento_name }}</h2>
+                        <p>Fecha del Evento: {{ eventos.fecha_evento }}</p>
+                        <p>{{ eventos.description_2 }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+
+        {% else %}
+            <h2>No hay eventos</h2>
+        {% endif %}
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(".more-btn").on('click', function() {
+                $(this).parent().parent().find(".more-text-evento").toggleClass("active");
+                $(this).parent().parent().find(".more-btn").toggleClass("activo");
+            });
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+{% endblock %}
