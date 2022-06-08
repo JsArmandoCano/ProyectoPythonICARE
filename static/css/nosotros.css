@@ -1,62 +1,770 @@
 /* Header Nosotros */
-.header-nosotros {
-    position: relative;
+.header-us {
     width: 100%;
-    height: 500px;
+    height: 600px;
+    background-image: url(../images/desierto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
 }
 
-.header-nosotros .tit-nosotros {
+.header-us .capa-us {
     width: 100%;
-    height: 30%;
-    background-color: #5095F5;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 30px;
 }
 
-.header-nosotros .tit-nosotros h2 {
-    font-size: 50px;
-    color: #fff;
-}
-
-.header-nosotros .flex-content {
-    width: 100%;
-    height: 70%;
+.header-us .capa-us .content-us {
+    width: 90%;
+    height: 500px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
     display: flex;
+    align-items: center;
 }
 
-.header-nosotros .flex-content .img-nosotros {
+.header-us .capa-us .content-us .img-us {
     width: 40%;
     height: 100%;
-}
-
-.header-nosotros .flex-content .img-nosotros div {
-    position: absolute;
-    top: 30px;
-    left: 80px;
-    width: 450px;
-    height: 450px;
     border-radius: 50%;
-    border: 5px solid #5095F5;
     overflow: hidden;
 }
 
-.header-nosotros .flex-content .img-nosotros div img {
+.header-us .capa-us .content-us .img-us img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.header-nosotros .flex-content .text-nosotros {
+.header-us .capa-us .content-us .text-us {
     width: 60%;
     height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.header-nosotros .flex-content .text-nosotros p {
+.header-us .capa-us .content-us .text-us h2 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.header-us .capa-us .content-us .text-us p {
+    color: aliceblue;
     font-size: 20px;
-    padding: 20px;
+}
+
+/* Titulo */
+.tit-us {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #5095F5;
+    border-bottom: 3px solid #5095F5;
+}
+
+.tit-us h1 {
+    font-size: 60px;
+    text-align: center;
+    color: #5095F5;
+}
+
+/* Nosotros Secciones */
+/* Seccion 1 */
+.seccion-nosotros {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 700px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-nosotros .capa-nosotros {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #5095F5;
+    opacity: 0.5;
+    width: 100%;
+    height: 75%;
+}
+
+.seccion-nosotros .content-img-us {
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-nosotros .content-img-us img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.seccion-nosotros .content-text-us {
+    width: 100%;
+    height: 40%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-nosotros .content-text-us .text-us-1 {
+    width: 600px;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.seccion-nosotros .content-text-us .text-us-1 p {
+    font-size: 30px;
     text-align: justify;
 }
 
-/* Seccion de Nosotros */
+/* Fotos Seccion 2 */
+.seccion-nosotros-2 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.seccion-nosotros-2 figure {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.seccion-nosotros-2 figure:nth-child(1) {
+    background-image: url(../images/nosotros-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccion-nosotros-2 figure:nth-child(2) {
+    background-image: url(../images/nosotros-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seccion-nosotros-2 figure aside {
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: .5s all ease;
+}
+
+.seccion-nosotros-2 figure:hover aside {
+    opacity: 1;
+}
+
+.seccion-nosotros-2 figure:nth-child(1) aside {
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+}
+
+.seccion-nosotros-2 figure:nth-child(1):hover aside  {
+    top: 0;
+    right: 0;
+}
+
+.seccion-nosotros-2 figure:nth-child(2) aside {
+    bottom: -300px;
+    width: 100%;
+    height: 200px;
+}
+
+.seccion-nosotros-2 figure:nth-child(2):hover aside {
+    bottom: 0;
+}
+
+.seccion-nosotros-2 figure aside p {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Seccion 3 */
+.seccion-nosotros-3 {
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.seccion-nosotros-3 .text-us-2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-nosotros-3 .text-us-2 div {
+    width: 80%;
+    height: 100%;
+    padding: 10px;
+}
+
+.seccion-nosotros-3 .text-us-2 div h2 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    color: #5095F5;
+}
+
+.seccion-nosotros-3 .text-us-2 div p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.seccion-nosotros-3 .content-text-us-3 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.seccion-nosotros-3 .content-text-us-3 .text-us-3 {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.seccion-nosotros-3 .content-text-us-3 .text-us-3 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #51FE99;
+}
+
+.seccion-nosotros-3 .content-text-us-3 .text-us-3 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.seccion-nosotros-3 .content-text-us-3 .text-us-4 {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.seccion-nosotros-3 .content-text-us-3 .text-us-4 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #51FE99;
+}
+
+.seccion-nosotros-3 .content-text-us-3 .text-us-4 p {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Seccion 4 */
+.seccion-us-4 {
+    width: 100%;
+    height: 800px;
+    background-attachment: fixed;
+    background-image: url(../images/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.seccion-us-4 .img-us-4 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-us-4 .img-us-4 img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.seccion-us-4 .text-us-5 {
+    width: 50%;
+    height: 100%;
+    background-color: #4242E6;
+    padding: 20px;
+}
+
+.seccion-us-4 .text-us-5 h2 {
+    font-size: 60px;
+}
+
+.seccion-us-4 .text-us-5 p {
+    font-size: 30px;
+}
+
+/* Seccion 5 */
+.seccion-us-5 {
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-image: url(../images/montalla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.seccion-us-5 .content-us-5 {
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    padding: 15px;
+    transition: .7s all ease;
+}
+
+.seccion-us-5:hover .content-us-5 {
+    background-color: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+}
+
+.seccion-us-5 .content-us-5 h2 {
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.seccion-us-5 .content-us-5 p {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: justify;
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    /* Header Nosotros */
+    .header-us .capa-us .content-us {
+        flex-direction: column;
+    }
+
+    .header-us .capa-us .content-us .img-us {
+        width: 100%;
+        height: 50%;
+        border-radius: 20px;
+    }
+
+    .header-us .capa-us .content-us .text-us {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+    }
+
+    .header-us .capa-us .content-us .text-us p {
+        text-align: center;
+    }
+
+    /* Titulo */
+    .tit-us {
+        height: 150px;
+        margin-bottom: 40px;
+    }
+    
+    .tit-us h1 {
+        font-size: 40px;
+    }
+
+    /* Fotos Seccion 2 */
+    .seccion-nosotros-2 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .seccion-nosotros-2 figure {
+        width: 100%;
+        height: 400px;
+    }
+
+    .seccion-nosotros-2 figure aside {
+        opacity: 1;
+    }
+
+    .seccion-nosotros-2 figure:nth-child(1) aside {
+        right: 0;
+    }
+
+    .seccion-nosotros-2 figure:nth-child(2) aside {
+        bottom: 0;
+    }
+
+    /* Seccion 3 */
+    .seccion-nosotros-3 {
+        height: auto;
+        padding: 5px;
+    }
+
+    /* Seccion 4 */
+    .seccion-us-4 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .seccion-us-4 .img-us-4 {
+        width: 100%;
+        height: 400px;
+    }
+
+    .seccion-us-4 .img-us-4 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .seccion-us-4 .text-us-5 {
+        width: 100%;
+        background-color: rgba(13, 0, 248, 0.5);
+    }
+
+    .seccion-us-4 .text-us-5 h2 {
+        font-size: 50px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .seccion-us-4 .text-us-5 p {
+        text-align: center;
+        color: #fff;
+    }
+
+    /* Seccion 5 */
+    .seccion-us-5 .content-us-5 {
+        background-color: rgba(255, 255, 255, 0.30);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(2px);
+    }
+
+    .seccion-us-5 .content-us-5 h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .seccion-us-5 .content-us-5 p {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    /* Header Nosotros */
+    .header-us {
+        height: 550px;
+        margin-bottom: 30px;  
+    }
+
+    .header-us .capa-us .content-us {
+        height: 500px;
+    }
+
+    .header-us .capa-us .content-us .text-us {
+        padding: 10px;
+    }
+
+    .header-us .capa-us .content-us .text-us h2 {
+        font-size: 25px;
+    }
+
+    .header-us .capa-us .content-us .text-us p {
+        font-size: 15px;
+    }
+
+    /* Titulo */
+    .tit-us {
+        height: 80px;
+        margin-bottom: 0;
+    }
+    
+    .tit-us h1 {
+        font-size: 20px;
+    }
+
+    /* Nosotros Secciones */
+    /* Seccion 1 */
+    .seccion-nosotros {
+        min-height: 600px;
+    }
+
+    .seccion-nosotros .capa-nosotros {
+        height: 85%;
+    }
+
+    .seccion-nosotros .content-img-us {
+        height: 250px;
+    }
+
+    .seccion-nosotros .content-img-us img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .seccion-nosotros .content-text-us {
+        height: auto;
+    }
+
+    .seccion-nosotros .content-text-us .text-us-1 {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .seccion-nosotros .content-text-us .text-us-1 p {
+        font-size: 20px;
+    }
+
+    /* Fotos Seccion 2 */
+    .seccion-nosotros-2 {
+        margin-bottom: 10px;
+    }
+
+    .seccion-nosotros-2 figure {
+        height: 250px;
+    }
+
+    .seccion-nosotros-2 figure:nth-child(1) aside {
+        right: 0;
+        width: 150px;
+    }
+
+    .seccion-nosotros-2 figure:nth-child(2) aside {
+        bottom: 0;
+        height: 120px;
+    }
+
+    .seccion-nosotros-2 figure aside p {
+        font-size: 12px;
+    }
+
+    /* Seccion 3 */
+    .seccion-nosotros-3 {
+        margin-bottom: 20px;
+    }
+
+    .seccion-nosotros-3 .text-us-2 div {
+        width: 100%;
+    }
+
+    .seccion-nosotros-3 .text-us-2 div h2 {
+        font-size: 40px;
+    }
+
+    .seccion-nosotros-3 .text-us-2 div p {
+        font-size: 20px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 {
+        flex-direction: column;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-3 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-3 h3 {
+        font-size: 30px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-3 p {
+        font-size: 18px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-4 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-4 h3 {
+        font-size: 30px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-4 p {
+        font-size: 18px;
+    }
+
+    /* Seccion 4 */
+    .seccion-us-4 .img-us-4 {
+        height: 250px;
+    }
+
+    .seccion-us-4 .img-us-4 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .seccion-us-4 .text-us-5 h2 {
+        font-size: 30px;
+    }
+    
+    .seccion-us-4 .text-us-5 p {
+        font-size: 18px;
+    }
+
+    /* Seccion 5 */
+    .seccion-us-5 .content-us-5 {
+        min-height: 400px;
+        padding: 10px;
+    }
+      
+    .seccion-us-5 .content-us-5 h2 {
+        font-size: 30px;
+    }
+
+    .seccion-us-5 .content-us-5 p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:370px) {
+    /* Header Nosotros */
+    .header-us {
+        height: 500px;
+    }
+
+    .header-us .capa-us .content-us {
+        height: 450px;
+    }
+
+    .header-us .capa-us .content-us .text-us h2 {
+        font-size: 18px;
+    }
+
+    .header-us .capa-us .content-us .text-us p {
+        font-size: 12px;
+    }
+
+    /* Titulo */
+    .tit-us {
+        height: 70px;
+    }
+    
+    .tit-us h1 {
+        font-size: 15px;
+    }
+
+     /* Nosotros Secciones */
+    /* Seccion 1 */
+    .seccion-nosotros {
+        min-height: 400px;
+    }
+
+    .seccion-nosotros .capa-nosotros {
+        height: 90%;
+    }
+
+    .seccion-nosotros .content-img-us {
+        height: 200px;
+    }
+
+    .seccion-nosotros .content-img-us img {
+        width: 200px;
+        height: 150px;
+    }
+
+    .seccion-nosotros .content-text-us .text-us-1 p {
+        font-size: 14px;
+    }
+
+    /* Fotos Seccion 2 */
+    .seccion-nosotros-2 figure {
+        height: 200px;
+    }
+
+    .seccion-nosotros-2 figure:nth-child(1) aside {
+        width: 100px;
+    }
+
+    .seccion-nosotros-2 figure:nth-child(2) aside {
+        height: 80px;
+    }
+
+    .seccion-nosotros-2 figure aside p {
+        font-size: 9px;
+    }
+
+    /* Seccion 3 */
+    .seccion-nosotros-3 .text-us-2 div h2 {
+        font-size: 30px;
+    }
+
+    .seccion-nosotros-3 .text-us-2 div p {
+        font-size: 16px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-3 h3 {
+        font-size: 20px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-3 p {
+        font-size: 14px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-4 h3 {
+        font-size: 20px;
+    }
+
+    .seccion-nosotros-3 .content-text-us-3 .text-us-4 p {
+        font-size: 14px;
+    }
+
+    /* Seccion 4 */
+    .seccion-us-4 .img-us-4 {
+        height: 200px;
+    }
+
+    .seccion-us-4 .img-us-4 img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .seccion-us-4 .text-us-5 h2 {
+        font-size: 18px;
+    }
+    
+    .seccion-us-4 .text-us-5 p {
+        font-size: 14px;
+    }
+
+    /* Seccion 5 */
+    .seccion-us-5 .content-us-5 {
+        min-height: 300px;
+        padding: 5px;
+    }
+      
+    .seccion-us-5 .content-us-5 h2 {
+        font-size: 20px;
+    }
+
+    .seccion-us-5 .content-us-5 p {
+        font-size: 14px;
+    }
+}

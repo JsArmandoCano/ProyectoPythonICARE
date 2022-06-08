@@ -189,7 +189,6 @@
 }
 
 
-
 /* Responsive */
 @media (max-width: 991px) {
     /* Header */
@@ -204,10 +203,6 @@
 }
 
 @media (max-width: 640px) {
-    .container {
-        background-color: green;
-    }
-
     /* Header */
     .header-eventos {
         height: 300px;
@@ -270,10 +265,6 @@
 }
 
 @media (max-width:370px) {
-    .container {
-        background-color: blue;
-    }
-
     /* Header */
     .header-eventos {
         height: 250px;

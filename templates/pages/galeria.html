@@ -57,6 +57,30 @@
         {% endfor %}
     </section>
 
+    {% if fotos.has_other_pages %}
+    <section class="paginador">
+
+        {% if fotos.has_previous %}
+            <a href="?page={{ fotos.previous_page_number }}"><</a>
+        {% else %}
+            <a href="#" style="display: none;"><</a>
+        {% endif %}
+
+        {% for i in fotos.paginator.page_range %}
+            {% if fotos.number == i %}
+                <a href="#" class="active">{{i}}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if fotos.has_next %}
+            <a href="?page={{ fotos.next_page_number }}">></a>
+        {% else %}
+            <a href="#" style="display: none;">></a>
+        {% endif %}
+
+    </section>
+    {% endif %}
+
     <script>
     const optionMenu = document.querySelector(".select-menu"),
         selectBtn = optionMenu.querySelector(".select-btn"),
