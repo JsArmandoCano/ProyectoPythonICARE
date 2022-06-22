@@ -42,5 +42,9 @@ def eventos(request):
     })
     
 
+def niños(request):
+    return render(request, 'pages/niños.html')
+    
+
 def contacto(request):
     return render(request, 'pages/contacto.html')

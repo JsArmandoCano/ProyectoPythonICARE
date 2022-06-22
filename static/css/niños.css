@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Header de Niños */
+.fondo-niños {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/fondo-niños.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+.header-niños {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    overflow: hidden;
+}
+
+.header-niños video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* Titulo Niños */
+.tit-niños {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.tit-niños h2 {
+    text-align: center;
+    color: #000;
+    font-size: 140px;
+}
+
+/* More info niños */
+/* Info Niños 1 */
+.niños-info {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.niños-info .niños-fondo-info {
+    position: relative;
+    width: 75%;
+    min-height: 400px;
+    height: auto;
+    background-color: #FFFD65;
+    padding: 20px 250px 20px 20px;
+}
+
+.niños-info .niños-fondo-info p {
+    font-size: 35px;
+    color: #000;
+    text-align: justify;
+}
+
+.niños-info .img-niños-info {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #FFFD65;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.niños-info .img-niños-info img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Info Niños 2 */
+.niños-info-2 {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.niños-info-2 .niños-fondo-info-2 {
+    position: relative;
+    width: 75%;
+    min-height: 400px;
+    height: auto;
+    background-color: #FFFD65;
+    padding: 20px 20px 20px 250px;
+}
+
+.niños-info-2 .niños-fondo-info-2 p {
+    font-size: 35px;
+    color: #000;
+    text-align: justify;
+}
+
+.niños-info-2 .img-niños-info-2 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #FFFD65;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.niños-info-2 .img-niños-info-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Actividades */
+.tit-actividades-niños {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tit-actividades-niños h3 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 100px;
+    letter-spacing: 1px;
+}
+
+/* Imagenes Actividades */
+.actividades-niños {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.actividades-niños .img-act-niños {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.actividades-niños .img-act-niños img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Titulo de Otros */
+.tit-otras-niños {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.tit-otras-niños h3 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 100px;
+    letter-spacing: 1px;
+}
+
+/* Otros */
+.otras-niños {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.otras-niños .card-otras-niños {
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
+
+.otras-niños .card-otras-niños:hover {
+    height: 450px;
+}
+
+.otras-niños .card-otras-niños .imgBx-otras-niños {
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.otras-niños .card-otras-niños:hover .imgBx-otras-niños {
+    width: 250px;
+    height: 250px;
+}
+
+.otras-niños .card-otras-niños .imgBx-otras-niños img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.otras-niños .card-otras-niños .content-otros-niños {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.otras-niños .card-otras-niños .content-otros-niños .details-otros-niños {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+
+.otras-niños .card-otras-niños:hover .content-otros-niños .details-otros-niños {
+    transform: translateY(0px); 
+}
+
+.otras-niños .card-otras-niños .content-otros-niños .details-otros-niños h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+}
+
+.otras-niños .card-otras-niños .content-otros-niños .details-otros-niños p {
+    font-size: 15px;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.otras-niños .card-otras-niños:hover .content-otros-niños .details-otros-niños p {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+/* Texto niños */
+.texto-niños {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30); 
+    background: linear-gradient(to right, #243B55, #141E30); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-niños .texto-content-niños {
+    padding: 30px;
+    text-align: center;
+}
+
+.texto-niños .texto-content-niños p {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.texto-niños .texto-content-niños small {
+    font-size: 30px;
+    color: #cecece;
+}
+
+
+/* Responsive */
+@media (max-width: 1200px) {
+    /* Titulo Niños */
+    .tit-niños h2 {
+        font-size: 120px;
+    }
+
+    /* More info niños */
+    /* Info Niños 1 */
+    .niños-info {
+        min-height: 400px;
+    }
+
+    .niños-info .niños-fondo-info {
+        min-height: 300px;
+        padding: 20px 200px 20px 20px;
+    }
+
+    .niños-info .niños-fondo-info p {
+        font-size: 30px;
+    }
+
+    .niños-info .img-niños-info {
+        width: 400px;
+        height: 400px;
+    }
+
+    /* Info Niños 2 */
+    .niños-info-2 {
+        min-height: 400px;
+    }
+
+    .niños-info-2 .niños-fondo-info-2 {
+        min-height: 300px;
+        padding: 20px 20px 20px 200px;
+    }
+
+    .niños-info-2 .niños-fondo-info-2 p {
+        font-size: 30px;
+    }
+
+    .niños-info-2 .img-niños-info-2 {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* Titulo Niños */
+    .tit-niños h2 {
+        font-size: 80px;
+    }
+
+    /* More info niños */
+    /* Info Niños 1 */
+    .niños-info {
+        flex-direction: column-reverse;
+    }
+
+    .niños-info .niños-fondo-info {
+        width: 100%;
+        padding: 120px 20px 20px 20px;
+        bottom: 120px;
+    }
+
+    .niños-info .img-niños-info {
+        position: relative;
+        right: 0;
+    }
+
+    /* Info Niños 2 */
+    .niños-info-2 {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+
+    .niños-info-2 .niños-fondo-info-2 {
+        width: 100%;
+        padding: 120px 20px 20px 20px;
+        bottom: 120px;
+    }
+
+    .niños-info-2 .img-niños-info-2 {
+        position: relative;
+        left: 0;
+    }
+
+    /* Actividades */
+    .tit-actividades-niños {
+        margin-top: -120px;
+    }
+
+    .tit-actividades-niños h3 {
+        font-size: 70px;
+    }
+
+    /* Imagenes Actividades */
+    .actividades-niños {
+       margin-top: -60px;
+    }
+
+    .actividades-niños .img-act-niños {
+        width: 500px;
+        height: 300px;
+    }
+
+    /* Titulo de Otros */
+    .tit-otras-niños h3 {
+        font-size: 70px;
+    }
+
+    /* Otros */
+    .otras-niños {
+        height: auto;
+        min-height: 550px;
+    }
+
+    .otras-niños .card-otras-niños {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    /* Texto niños */
+    .texto-niños .texto-content-niños p {
+        font-size: 30px;
+    }
+
+    .texto-niños .texto-content-niños small {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    /* Titulo Niños */
+    .tit-niños {
+        height: 100px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+
+    .tit-niños h2 {
+        font-size: 40px;
+    }
+
+    /* More info niños */
+    /* Info Niños 1 */
+    .niños-info .niños-fondo-info p {
+        font-size: 20px;
+    }
+
+    .niños-info .img-niños-info {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Info Niños 2 */
+    .niños-info-2 {
+        margin-top: -50px;
+    }
+
+    .niños-info-2 .niños-fondo-info-2 p {
+        font-size: 20px;
+    }
+
+    .niños-info-2 .img-niños-info-2 {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Actividades */
+    .tit-actividades-niños {
+        height: 100px;
+        margin-top: -100px;
+    }
+
+    .tit-actividades-niños h3 {
+        font-size: 40px;
+    }
+
+    /* Imagenes Actividades */
+    .actividades-niños {
+        margin-top: -30px;
+        padding: 5px;
+     }
+ 
+     .actividades-niños .img-act-niños {
+         width: 400px;
+         height: 200px;
+     }
+
+     /* Titulo de Otros */
+    .tit-otras-niños {
+        height: 100px;
+        margin-top: 0;
+    }
+
+    .tit-otras-niños h3 {
+        font-size: 40px;
+    }
+
+    /* Otros */
+    .otras-niños .card-otras-niños {
+        width: 250px;
+        height: 320px;
+    }
+
+    .otras-niños .card-otras-niños:hover {
+        height: 320px;
+    }
+
+    .otras-niños .card-otras-niños .imgBx-otras-niños {
+        width: 150px;
+        height: 150px;
+    }
+
+    .otras-niños .card-otras-niños:hover .imgBx-otras-niños {
+        width: 150px;
+        height: 150px;
+    }
+
+    .otras-niños .card-otras-niños .content-otros-niños .details-otros-niños {
+        transform: translateY(-10px);
+        padding: 20px;
+    }
+
+    .otras-niños .card-otras-niños:hover .content-otros-niños .details-otros-niños {
+        transform: translateY(-10px); 
+    }
+
+    .otras-niños .card-otras-niños .content-otros-niños .details-otros-niños h2 {
+        font-size: 25px;
+    }
+
+    .otras-niños .card-otras-niños .content-otros-niños .details-otros-niños p {
+        font-size: 14px;
+        transform: translateY(10px);
+        opacity: 1;
+    }
+
+    /* Texto niños */
+    .texto-niños .texto-content-niños p {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .texto-niños .texto-content-niños small {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:370px) {
+    /* Titulo Niños */
+    .tit-niños {
+        height: 80px;
+        margin-top: 10px;
+    }
+
+    .tit-niños h2 {
+        font-size: 30px;
+    }
+
+    /* More info niños */
+    /* Info Niños 1 */
+    .niños-info .niños-fondo-info p {
+        font-size: 15px;
+    }
+
+    .niños-info .img-niños-info {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Info Niños 2 */
+    .niños-info-2 .niños-fondo-info-2 p {
+        font-size: 15px;
+    }
+
+    .niños-info-2 .img-niños-info-2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Actividades */
+    .tit-actividades-niños {
+        height: 80px;
+        margin-top: -120px;
+    }
+
+    .tit-actividades-niños h3 {
+        font-size: 30px;
+    }
+
+    /* Imagenes Actividades */
+    .actividades-niños {
+        margin-top: -30px;
+        padding: 0;
+     }
+ 
+     .actividades-niños .img-act-niños {
+         width: 300px;
+         height: 150px;
+     }
+
+    /* Titulo de Otros */
+    .tit-otras-niños {
+        height: 80px;
+    }
+
+    .tit-otras-niños h3 {
+        font-size: 30px;
+    }
+
+    /* Otros */
+    .otras-niños .card-otras-niños {
+        width: 200px;
+        height: 250px;
+    }
+
+    .otras-niños .card-otras-niños:hover {
+        height: 250px;
+    }
+
+    .otras-niños .card-otras-niños .imgBx-otras-niños {
+        width: 100px;
+        height: 100px;
+    }
+
+    .otras-niños .card-otras-niños:hover .imgBx-otras-niños {
+        width: 100px;
+        height: 100px;
+    }
+
+    .otras-niños .card-otras-niños .content-otros-niños .details-otros-niños {
+        transform: translateY(-20px);
+        padding: 10px;
+    }   
+
+    .otras-niños .card-otras-niños:hover .content-otros-niños .details-otros-niños {
+        transform: translateY(-20px); 
+    }
+
+    .otras-niños .card-otras-niños .content-otros-niños .details-otros-niños h2 {
+        font-size: 20px;
+    }
+
+    .otras-niños .card-otras-niños .content-otros-niños .details-otros-niños p {
+        font-size: 12px;
+    }
+
+    /* Texto niños */
+    .texto-niños .texto-content-niños {
+        padding: 15px;
+    }
+
+    .texto-niños .texto-content-niños p {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .texto-niños .texto-content-niños small {
+        font-size: 10px;
+    }
+}
+

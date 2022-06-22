@@ -124,7 +124,7 @@
 }
 
 .seccion-nosotros .content-text-us .text-us-1 {
-    width: 600px;
+    width: 800px;
     height: 100%;
     margin-top: 10px;
 }
@@ -293,6 +293,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    padding: 20px;
 }
 
 .seccion-us-4 .img-us-4 {
@@ -314,6 +315,7 @@
     width: 50%;
     height: 100%;
     background-color: #4242E6;
+    border-radius: 10px;
     padding: 20px;
 }
 
@@ -334,6 +336,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px;
+    margin-top: 30px;
 }
 
 .seccion-us-5 .content-us-5 {
@@ -612,6 +615,10 @@
     }
 
     /* Seccion 4 */
+    .seccion-us-4 {
+        padding: 10px;
+    }
+
     .seccion-us-4 .img-us-4 {
         height: 250px;
     }
@@ -737,6 +744,10 @@
     }
 
     /* Seccion 4 */
+    .seccion-us-4 {
+        padding: 5px;
+    }
+
     .seccion-us-4 .img-us-4 {
         height: 200px;
     }
@@ -755,6 +766,10 @@
     }
 
     /* Seccion 5 */
+    .seccion-us-5 {
+        margin-top: 20px;
+    }
+
     .seccion-us-5 .content-us-5 {
         min-height: 300px;
         padding: 5px;

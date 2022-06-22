@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="fondo-niños"></div>  
+
+    <header class="header-niños">
+        <video src="{% static 'videos/niños.mp4' %}" autoplay muted loop></video>
+    </header>
+
+    <div class="tit-niños">
+        <h2>Iglesia Infantil</h2>
+    </div>
+
+    <section class="niños-info">
+        <div class="niños-fondo-info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor nulla sapiente nostrum a fugit nemo illum id saepe aut ex possimus dolore deleniti, recusandae at animi error facilis quo.</p>
+        </div>
+        <div class="img-niños-info">
+            <img src="{% static 'images/niños-info.jpg' %}" alt="Niños">
+        </div>
+    </section>
+
+    <section class="niños-info-2">
+        <div class="niños-fondo-info-2">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum illo deserunt ab minima nobis deleniti dolor, quas esse velit, iusto minus nulla tempora impedit quos excepturi explicabo aut, necessitatibus eum.</p>
+        </div>
+        <div class="img-niños-info-2">
+            <img src="{% static 'images/niños-info-2.jpg' %}" alt="Niños">
+        </div>
+    </section>
+
+    <div class="tit-actividades-niños">
+        <h3>Actividades</h3>
+    </div>
+
+    
+    <section class="actividades-niños">
+        <div class="img-act-niños">
+            <img src="{% static 'images/cat-niños-1.jpeg' %}" alt="Categoria1">
+        </div>
+        <div class="img-act-niños">
+            <img src="{% static 'images/cat-niños-2.jpeg' %}" alt="Categoria2">
+        </div>
+        <div class="img-act-niños">
+            <img src="{% static 'images/cat-niños-3.jpeg' %}" alt="Categoria3">
+        </div>
+        <div class="img-act-niños">
+            <img src="{% static 'images/cat-niños-4.jpeg' %}" alt="Categoria4">
+        </div>
+        <div class="img-act-niños">
+            <img src="{% static 'images/cat-niños-5.jpeg' %}" alt="Categoria5">
+        </div>
+    </section>
+    
+    <div class="tit-otras-niños">
+        <h3>Otras</h3>
+    </div>
+
+    <section class="otras-niños">
+        <div class="card-otras-niños">
+            <div class="imgBx-otras-niños">
+                <img src="{% static 'images/obras-niños.jpg' %}" alt="Obras de los niños">
+            </div>
+            <div class="content-otros-niños">
+                <div class="details-otros-niños">
+                    <h2>Obras de Teatro</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae numquam aperiam pariatur molestias asperiores blanditiis ipsa, adipisci totam. Unde quaerat, assumenda autem officiis optio ea!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-otras-niños">
+            <div class="imgBx-otras-niños">
+                <img src="{% static 'images/ebv-niños.jpg' %}" alt="Escuelita Biblica">
+            </div>
+            <div class="content-otros-niños">
+                <div class="details-otros-niños">
+                    <h2>Escuelita Biblica</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae numquam aperiam pariatur molestias asperiores blanditiis ipsa, adipisci totam. Unde quaerat, assumenda autem officiis optio ea!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="texto-niños">
+        <div class="texto-content-niños">
+            <hr>
+            <p>Instruye al niño en su carrera: Aun cuando fuere viejo no se apartará de el.</p>
+            <small>Proverbios 22:6</small>
+            <hr>
+        </div>
+    </section>
+
+    <script>
+        let video = document.querySelector('video');
+        window.addEventListener('scroll', function() {
+            let value = 1 + window.scrollY/-600;
+            video.style.opacity = value;
+        })
+    </script>
+
+{% endblock %}
