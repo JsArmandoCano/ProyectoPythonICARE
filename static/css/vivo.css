@@ -1,0 +1,109 @@
+.header-vivo {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/fondo-vivo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-vivo h2 {
+    font-size: 200px;
+    color: #000;
+    text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 30px #fff, 0 0 50px #fff;
+}
+
+/* Video en Vivo de Youtube */
+.video-envivo {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+}
+
+/* Video */
+.video-envivo iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Por si no hay en Vivo */
+.video-envivo .aviso-vivo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px solid #5095F5;
+    border-bottom: 5px solid #5095F5;
+}
+
+.video-envivo .aviso-vivo h2 {
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: #5095F5;
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    .header-vivo {
+        height: 300px;
+    }
+    
+    .header-vivo h2 {
+        font-size: 120px;
+    }
+    
+    /* Video en Vivo de Youtube */
+    .video-envivo {
+        height: 500px;
+    }
+
+    /* Por si no hay en Vivo */
+    .video-envivo .aviso-vivo h2 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-vivo {
+        height: 200px;
+    }
+    
+    .header-vivo h2 {
+        font-size: 60px;
+    }
+    
+    /* Video en Vivo de Youtube */
+    .video-envivo {
+        height: 400px;
+    }
+
+    /* Por si no hay en Vivo */
+    .video-envivo .aviso-vivo h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:370px) {
+    .header-vivo h2 {
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    /* Video en Vivo de Youtube */
+    .video-envivo {
+        height: 300px;
+    }
+
+    /* Por si no hay en Vivo */
+    .video-envivo .aviso-vivo h2 {
+        font-size: 30px;
+    }
+}

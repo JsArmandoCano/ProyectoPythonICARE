@@ -42,7 +42,7 @@
         </li>
 
         <li>
-            <a href="#">
+            <a href="{% url 'dominicales' %}">
                 <i class="bx bx-book-open"></i>
                 <span class="links_name">Dominicales</span>
             </a>
@@ -50,11 +50,11 @@
         </li>
 
         <li>
-            <a href="#">
-                <i class="bx bx-edit-alt"></i>
-                <span class="links_name">Estudios Biblicos</span>
+            <a href="{% url 'vivo' %}">
+                <i class="bx bx-play-circle"></i>
+                <span class="links_name">En Vivo</span>
             </a>
-            <span class="tooltip">Estudios Biblicos</span>
+            <span class="tooltip">En Vivo</span>
         </li>
 
         <li>
@@ -71,17 +71,6 @@
                 <span class="links_name">Contacto</span>
             </a>
             <span class="tooltip">Contacto</span>
-        </li>
-
-        <li class="profile">
-            <div class="profile-details">
-                <img src="{% static 'images/floresicare.jpg' %}" alt="profileImg" />
-                <div class="name_job">
-                    <div class="name">Josy Cano</div>
-                    <div class="job">Miembro ICARE</div>
-                </div>
-            </div>
-            <i class="bx bx-log-out" id="log_out"></i>
         </li>
 
     </ul>
@@ -104,10 +93,10 @@
 
     function menuBtnChange() {
         if(sidebar.classList.contains("open")){
-        closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        closeBtn.classList.replace("bx-menu", "bx-x");
         }
         else {
-        closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+        closeBtn.classList.replace("bx-x","bx-menu");
         }
     }
 </script>

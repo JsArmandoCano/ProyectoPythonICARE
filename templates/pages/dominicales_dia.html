@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="seccion-dom-dia">
+        <div class="tit-dia">
+            <h2>Dominicales {{ dia_consulta }}</h2>
+        </div>
+        
+        <div class="card-dom-dia">
+            {% for dominical in dia_select %}
+                <div class="card-item-dom"> 
+                    <div class="img-dom">
+                        <img src="{{ dominical.evento_image.url }}" alt="{{ dominical.name_dom }}">
+                    </div>
+
+                    <div class="info-dom">
+                        <div class="datos-card">
+                            <h2>{{ dominical.name_dom }}</h2>
+                            <small>Fecha: {{ dominical.fecha }}</small>
+                        </div>
+
+                        <div class="descarga-dom"> 
+                            <a href="{{ dominical.pdf.url }}" download="download.pdf">Descargar PDF</a>
+
+                            <audio controls>
+                                <source src="{{ dominical.audio.url }}" type="audio/ogg">
+                                Tu navegador no es compatible con el audio
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    
+{% endblock %}

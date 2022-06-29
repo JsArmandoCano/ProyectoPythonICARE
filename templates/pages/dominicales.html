@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <header class="header-dom">
+        <img src="{% static 'images/dom-fondos-2.jpg' %}" alt="Arboles" id="arboles">
+        <img src="{% static 'images/dom-fondos-1.png' %}" alt="Biblia" id="biblia">
+        <img src="{% static 'images/dom-fondos-3.png' %}" alt="Paloma" id="paloma">
+        <h2 id="tit-dom" class="animate__animated animate__zoomIn">Dominicales</h2>
+    </header>
+
+    <!-- Domingos -->
+    <section class="seccion-dom-dia">
+        <div class="tit-dia">
+            <h2>Domingo</h2>
+        </div>
+        
+        <div class="card-dom-dia">
+            {% if dominicales_dom %}
+                {% for dominical in dominicales_dom %}
+                    <div class="card-item-dom"> 
+                        <div class="img-dom">
+                            <img src="{{ dominical.evento_image.url }}" alt="{{ dominical.name_dom }}">
+                        </div>
+
+                        <div class="info-dom">
+                            <div class="datos-card">
+                                <h2>{{ dominical.name_dom }}</h2>
+                                <small>Fecha: {{ dominical.fecha }}</small>
+                            </div>
+
+                            <div class="descarga-dom"> 
+                                <a href="{{ dominical.pdf.url }}" download="download.pdf">Descargar PDF</a>
+
+                                <audio controls>
+                                    <source src="{{ dominical.audio.url }}" type="audio/ogg">
+                                    Tu navegador no es compatible con el audio
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h3>No hay contenido</h3>
+            {% endif %}
+        </div>
+
+        <div class="todas-dom">
+            <a href="domingos/">Ver todo</a>
+        </div>
+    </section>
+
+
+    <!-- Jueves -->
+    <section class="seccion-dom-dia">
+        <div class="tit-dia">
+            <h2>Jueves</h2>
+        </div>
+
+        <div class="card-dom-dia">
+            {% if dominicales_jue %}
+                {% for dominical in dominicales_jue %}
+                    <div class="card-item-dom"> 
+                        <div class="img-dom">
+                            <img src="{{ dominical.evento_image.url }}" alt="{{ dominical.name_dom }}">
+                        </div>
+
+                        <div class="info-dom">
+                            <div class="datos-card">
+                                <h2>{{ dominical.name_dom }}</h2>
+                                <small>Fecha: {{ dominical.fecha }}</small>
+                            </div>
+
+                            <div class="descarga-dom"> 
+                                <a href="{{ dominical.pdf.url }}" download="download.pdf">Descargar PDF</a>
+
+                                <audio controls>
+                                    <source src="{{ dominical.audio.url }}" type="audio/ogg">
+                                    Tu navegador no es compatible con el audio
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h3>No hay Contenido</h3>
+            {% endif %}
+        </div>
+
+        <div class="todas-dom">
+            <a href="jueves/">Ver todo</a>
+        </div>
+    </section>
+
+
+    <!-- Martes -->
+    <section class="seccion-dom-dia">
+        <div class="tit-dia">
+            <h2>Martes</h2>
+        </div>
+        
+        <div class="card-dom-dia">
+            {% if dominicales_mar %}
+                {% for dominical in dominicales_mar %}
+                    <div class="card-item-dom"> 
+                        <div class="img-dom">
+                            <img src="{{ dominical.evento_image.url }}" alt="{{ dominical.name_dom }}">
+                        </div>
+
+                        <div class="info-dom">
+                            <div class="datos-card">
+                                <h2>{{ dominical.name_dom }}</h2>
+                                <small>Fecha: {{ dominical.fecha }}</small>
+                            </div>
+
+                            <div class="descarga-dom"> 
+                                <a href="{{ dominical.pdf.url }}" download="download.pdf">Descargar PDF</a>
+
+                                <audio controls>
+                                    <source src="{{ dominical.audio.url }}" type="audio/ogg">
+                                    Tu navegador no es compatible con el audio
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h3>No hay Contenido</h3>
+            {% endif %}
+        </div>
+
+        <div class="todas-dom">
+            <a href="martes/">Ver todo</a>
+        </div>
+    </section>
+
+
+    <script>
+        let arboles = document.getElementById("arboles");        
+        let biblia = document.getElementById("biblia"); 
+        let paloma = document.getElementById("paloma"); 
+        let tit = document.getElementById("tit-dom");
+        
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+ 
+            arboles.style.top = value * 0.5 + 'px';
+            biblia.style.top = value * 0.15 + 'px';
+            paloma.style.left = -value * 0.5 + 'px';
+            tit.style.top = value * 1 + 'px';
+        })
+    </script>
+{% endblock %}

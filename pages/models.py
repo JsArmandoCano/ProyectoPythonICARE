@@ -1,5 +1,6 @@
 from audioop import reverse
 from distutils.command.upload import upload
+from email.policy import default
 from pyexpat import model
 from tkinter import image_names
 from unicodedata import category
@@ -22,6 +23,7 @@ class Category(models.Model):
     def __str__(self):
         return self.category_name
     
+    
 class Photo(models.Model):
     image_name = models.CharField(max_length=20, blank=True)
     image = models.ImageField(upload_to='photos/fotos')
@@ -31,6 +33,7 @@ class Photo(models.Model):
     
     def __str__(self):
         return self.image_name
+    
     
 class Evento(models.Model):
     evento_name = models.CharField(max_length=50)
@@ -42,3 +45,33 @@ class Evento(models.Model):
     
     def __str__(self):
         return self.evento_name
+    
+    
+class Dominicales(models.Model):
+    CHOICES = (
+        ('Domingos', 'Domingos'),
+        ('Jueves', 'Jueves'),
+        ('Martes', 'Martes'),
+    )
+    
+    name_dom = models.CharField(max_length=100, blank=False)
+    fecha = models.DateField()
+    dia = models.CharField(choices=CHOICES, max_length=50, default='Domingo')
+    evento_image = models.ImageField(upload_to='photos/fotos', blank=False)
+    pdf = models.FileField(upload_to='pdf/pdfs', blank=False)
+    audio = models.FileField(upload_to='audio/audios', blank=False)
+    is_available = models.BooleanField(default=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.name_dom
+    
+    
+class Vivo(models.Model):
+    name_vivo = models.CharField(max_length=200)
+    frame = models.URLField(max_length=200)
+    is_available = models.BooleanField(default=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.name_vivo

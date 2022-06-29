@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <header class="header-vivo">
+        <h2 class="animate__animated animate__slideInDown">En Vivo</h2>
+    </header>
+
+    <section class="video-envivo">
+        {% if urlvideo %}
+
+            {% for video in urlvideo %}
+                <iframe width="560" height="315" src="{{ video.frame }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+            {% endfor %}   
+            
+        {% else %}
+            <div class="aviso-vivo">
+                <h2>En vivo Domingos a las 11am.</h2>
+            </div>
+        {% endif %}
+    </section>
+{% endblock %}

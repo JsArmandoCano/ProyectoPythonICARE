@@ -9,3 +9,5 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Photo)
 admin.site.register(Evento)
+admin.site.register(Dominicales)
+admin.site.register(Vivo)
