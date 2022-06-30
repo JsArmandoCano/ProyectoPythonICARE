@@ -15,7 +15,7 @@
 
     <section class="niños-info">
         <div class="niños-fondo-info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor nulla sapiente nostrum a fugit nemo illum id saepe aut ex possimus dolore deleniti, recusandae at animi error facilis quo.</p>
+            <p data-aos="zoom-in-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor nulla sapiente nostrum a fugit nemo illum id saepe aut ex possimus dolore deleniti, recusandae at animi error facilis quo.</p>
         </div>
         <div class="img-niños-info">
             <img src="{% static 'images/niños-info.jpg' %}" alt="Niños">
@@ -24,7 +24,7 @@
 
     <section class="niños-info-2">
         <div class="niños-fondo-info-2">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum illo deserunt ab minima nobis deleniti dolor, quas esse velit, iusto minus nulla tempora impedit quos excepturi explicabo aut, necessitatibus eum.</p>
+            <p data-aos="zoom-in-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum illo deserunt ab minima nobis deleniti dolor, quas esse velit, iusto minus nulla tempora impedit quos excepturi explicabo aut, necessitatibus eum.</p>
         </div>
         <div class="img-niños-info-2">
             <img src="{% static 'images/niños-info-2.jpg' %}" alt="Niños">
@@ -37,19 +37,19 @@
 
     
     <section class="actividades-niños">
-        <div class="img-act-niños">
+        <div class="img-act-niños" data-aos="zoom-in-up">
             <img src="{% static 'images/cat-niños-1.jpeg' %}" alt="Categoria1">
         </div>
-        <div class="img-act-niños">
+        <div class="img-act-niños" data-aos="zoom-in-up">
             <img src="{% static 'images/cat-niños-2.jpeg' %}" alt="Categoria2">
         </div>
-        <div class="img-act-niños">
+        <div class="img-act-niños" data-aos="zoom-in-up">
             <img src="{% static 'images/cat-niños-3.jpeg' %}" alt="Categoria3">
         </div>
-        <div class="img-act-niños">
+        <div class="img-act-niños" data-aos="zoom-in-up">
             <img src="{% static 'images/cat-niños-4.jpeg' %}" alt="Categoria4">
         </div>
-        <div class="img-act-niños">
+        <div class="img-act-niños" data-aos="zoom-in-up">
             <img src="{% static 'images/cat-niños-5.jpeg' %}" alt="Categoria5">
         </div>
     </section>
@@ -85,13 +85,17 @@
     </section>
 
     <section class="texto-niños">
-        <div class="texto-content-niños">
+        <div class="texto-content-niños" data-aos="zoom-out">
             <hr>
             <p>Instruye al niño en su carrera: Aun cuando fuere viejo no se apartará de el.</p>
             <small>Proverbios 22:6</small>
             <hr>
         </div>
     </section>
+
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         let video = document.querySelector('video');

@@ -63,6 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .texto {
@@ -262,6 +263,7 @@
     background-size: cover;
     background-attachment: fixed;
     display: flex;
+    overflow-x: hidden;
 }
 
 .info .text-info {
@@ -325,6 +327,7 @@
     padding: 20px;
     border-top: 5px solid #252850;
     border-bottom: 5px solid #252850;
+    overflow: hidden;
 }
   
 .pastores h2 {

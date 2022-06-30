@@ -12,7 +12,7 @@
     </section>
     
     <section class="content-texto">
-        <div class="texto">
+        <div class="texto" data-aos="flip-up">
             <hr>
             <p>Mira que te mando que te esfuerces y seas valiente: no temas ni desmayes, porque Jehová tu Dios será contigo en donde quiera que fueres.</p>
             <small>Josué 1:9</small>
@@ -65,12 +65,12 @@
     </section>
 
     <section class="info">
-        <div class="text-info">
+        <div class="text-info" data-aos="fade-right">
             <h2>¿Quiénes Somos?</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis iusto. Libero dicta obcaecati quod harum enim quibusdam, autem nulla cumque esse ipsam commodi unde iure voluptas optio, consequatur minima.</p>
             <a href="{% url 'nosotros' %}">Leer más ...</a>
         </div>
-        <div class="img-info">
+        <div class="img-info" data-aos="fade-left">
             <img src="{% static 'images/iglesia-icare.jpeg' %}" alt="Iglesia">
         </div>
     </section>
@@ -78,7 +78,7 @@
     <section class="pastores">
         <h2>Pastores</h2>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="fade-up-right">
                 <div class="circle">
                     <div class="imgBx">
                         <img src="{% static 'images/pastor1.jpeg' %}" alt="Pastor">
@@ -90,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up">
                 <div class="circle">
                     <div class="imgBx">
                         <img src="{% static 'images/pastor3.jpeg' %}" alt="Pastor">
@@ -102,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-aos="fade-up-left">
                 <div class="circle">
                     <div class="imgBx">
                         <img src="{% static 'images/pastor2.jpeg' %}" alt="Pastor">
@@ -117,6 +117,9 @@
         </div>
     </section>
 
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         const SkewedOne = document.querySelector('.SkewedOne');

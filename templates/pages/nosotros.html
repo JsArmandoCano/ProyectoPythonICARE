@@ -23,7 +23,7 @@
     <!-- Seccion 1 -->
     <section class="seccion-nosotros">
         <div class="capa-nosotros"></div>
-        <div class="content-img-us">
+        <div class="content-img-us" data-aos="zoom-in">
             <img src="{% static 'images/nosotros-4.jpg' %}" alt="Nosotros">
         </div>
         <div class="content-text-us">
@@ -49,18 +49,18 @@
 
     <!-- Seccion 3 -->
     <section class="seccion-nosotros-3">
-        <div class="text-us-2">
+        <div class="text-us-2" data-aos="fade-up">
             <div>
                 <h2>Titulo</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tenetur nemo amet reprehenderit molestiae, corporis a quos vel provident repellat vitae qui sequi illo iure distinctio animi quisquam eum mollitia.</p>
             </div>
         </div>
         <div class="content-text-us-3">
-            <div class="text-us-3">
+            <div class="text-us-3" data-aos="fade-up">
                 <h3>Titulo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus corrupti doloremque nisi labore ea unde alias accusamus molestias? Quod debitis provident nisi fuga corrupti optio blanditiis unde. Doloribus, alias aliquid.</p>
             </div>
-            <div class="text-us-4">
+            <div class="text-us-4" data-aos="fade-up">
                 <h3>Titulo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus corrupti doloremque nisi labore ea unde alias accusamus molestias? Quod debitis provident nisi fuga corrupti optio blanditiis unde. Doloribus, alias aliquid.</p>
             </div>
@@ -73,7 +73,7 @@
             <img src="{% static 'images/logoIcare.jpg' %}" alt="Logo">
         </div>
         <div class="text-us-5">
-            <h2>Nuestro Logo</h2>
+            <h2 data-aos="fade-up">Nuestro Logo</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quae sapiente expedita fuga beatae id repellat nulla, est dolorem perferendis consequatur quisquam nihil aliquam earum, ratione labore repudiandae autem iste?</p>
         </div>
     </section>
@@ -81,8 +81,12 @@
     <!-- Seccion 5 -->
     <section class="seccion-us-5">
         <div class="content-us-5">
-            <h2>Titulo</h2>
+            <h2 data-aos="flip-left">Titulo</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo necessitatibus vel, ipsa iure nesciunt autem deleniti cum explicabo! In dolore recusandae inventore atque dolores molestias rerum vero expedita reiciendis unde?</p>
         </div>
     </section>
+
+    <script>
+        AOS.init();
+    </script>
 {% endblock %}
