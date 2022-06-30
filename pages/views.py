@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404, redirect, render
+from django.shortcuts import get_object_or_404, render
 from .models import *
 from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 
@@ -38,8 +38,11 @@ def galeria(request, category_slug=None):
 def eventos(request):
     evento = Evento.objects.all().filter(is_available=True) 
     
+    avisos = Avisos.objects.all().filter(is_available=True) 
+    
     return render(request, 'pages/eventos.html', {
         'evento': evento,
+        'avisos': avisos,
     })
     
     

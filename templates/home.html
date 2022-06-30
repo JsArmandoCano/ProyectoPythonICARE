@@ -20,6 +20,21 @@
         </div>
     </section>
 
+    <section class="sevicios">
+        <div class="info-servicios">
+            <h2>Dias de Servicio</h2>
+            <p>Domingos de 11:00 am a 1:00 pm</p>
+        </div>
+        <div class="servicios-img">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_4ilboxgz.json"  
+                           background="transparent"  
+                           speed="1"  
+                           style="width: 100%; height: 100%;"  
+                           loop autoplay>
+            </lottie-player>
+        </div>
+    </section>
+
     <!-- Swiper -->
     <section class="avisos">
         <div class="bgPulse">
@@ -39,18 +54,11 @@
 
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
+                {% for aviso in avisos %}
+                    <div class="swiper-slide">
+                        <img src="{{ aviso.aviso_image.url }}" alt="{{ aviso.aviso_name }}" />
+                    </div>
+                {% endfor %}
             </div>
             <div class="swiper-pagination"></div>
         </div>

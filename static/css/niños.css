@@ -64,13 +64,13 @@
     width: 75%;
     min-height: 400px;
     height: auto;
-    background-color: #FFFD65;
+    background-color: #2ED43D;
     padding: 20px 250px 20px 20px;
 }
 
 .niños-info .niños-fondo-info p {
     font-size: 35px;
-    color: #000;
+    color: #fff;
     text-align: justify;
 }
 
@@ -80,7 +80,7 @@
     right: 20px;
     width: 500px;
     height: 500px;
-    border: 10px solid #FFFD65;
+    border: 10px solid #2ED43D;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -108,13 +108,13 @@
     width: 75%;
     min-height: 400px;
     height: auto;
-    background-color: #FFFD65;
+    background-color: #224CFF;
     padding: 20px 20px 20px 250px;
 }
 
 .niños-info-2 .niños-fondo-info-2 p {
     font-size: 35px;
-    color: #000;
+    color: #fff;
     text-align: justify;
 }
 
@@ -124,7 +124,7 @@
     left: 20px;
     width: 500px;
     height: 500px;
-    border: 10px solid #FFFD65;
+    border: 10px solid #224CFF;
     border-radius: 50%;
     overflow: hidden;
 }

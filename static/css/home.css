@@ -83,6 +83,44 @@
     color: #cecece;
 }
 
+/* Seccion de servicios */
+.sevicios {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    padding: 10px;
+    border-bottom: 5px solid #252850;
+    border-top: 5px solid #252850;
+    display: flex;
+}
+
+.sevicios .info-servicios {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sevicios .info-servicios h2 {
+    font-size: 70px;
+    text-align: center;
+    color: #5095F5;
+}
+
+.sevicios .info-servicios p {
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+}
+
+.sevicios .servicios-img {
+    width: 50%;
+    height: 100%;
+    background-color: purple;
+}
+
 /* Carrusel */
 .avisos {
     position: relative;
@@ -408,6 +446,19 @@
         font-size: 20px;
     }
 
+    /* Seccion de servicios */
+    .sevicios {
+        height: 400px;
+    }
+
+    .sevicios .info-servicios h2 {
+        font-size: 60px;
+    }
+
+    .sevicios .info-servicios p {
+        font-size: 40px;
+    }
+
     /* Informacion sobre nosotros */
     .info {
         height: 700px;
@@ -490,10 +541,41 @@
         font-size: 15px;
     }
 
+    /* Seccion de servicios */
+    .sevicios {
+        height: 300px;
+        flex-direction: column;
+    }
+
+    .sevicios .info-servicios {
+        width: 100%;
+        height: 50%;
+    }
+
+    .sevicios .info-servicios h2 {
+        font-size: 30px;
+    }
+
+    .sevicios .info-servicios p {
+        font-size: 25px;
+    }
+
+    .sevicios .servicios-img {
+        width: 100%;
+        height: 50%;
+        background-color: transparent;
+    }
+
+    /* Carrusel */
+    .avisos {
+        margin-top: 20px;
+    }
+
     /* Informacion sobre nosotros */
     .info {
         padding: 10px;
         height: 650px;
+        margin-top: 30px;
     }
 
     .info .text-info h2 {
@@ -551,6 +633,10 @@
     }
 
     /* Texto Versiculo */
+    .content-texto {
+        margin-top: 10px;
+    }
+
     .texto {
         padding: 15px;
     }
@@ -564,10 +650,39 @@
         font-size: 10px;
     }
 
+    /* Seccion de servicios */
+    .sevicios {
+        height: 200px;
+    }
+
+    .sevicios .info-servicios {
+        width: 100%;
+        height: 50%;
+    }
+
+    .sevicios .info-servicios h2 {
+        font-size: 24px;
+    }
+
+    .sevicios .info-servicios p {
+        font-size: 15px;
+    }
+
+    .sevicios .servicios-img {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* Carrusel */
+    .avisos {
+        margin-top: 15px;
+    }
+
     /* Informacion sobre nosotros */
     .info {
         height: 550px;
         padding: 5px;
+        margin-top: 20px;
     }
 
     .info .text-info {
