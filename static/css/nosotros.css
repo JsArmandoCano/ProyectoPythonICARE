@@ -87,6 +87,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .seccion-nosotros .capa-nosotros {
@@ -294,6 +295,7 @@
     background-size: cover;
     display: flex;
     padding: 20px;
+    overflow: hidden;
 }
 
 .seccion-us-4 .img-us-4 {
@@ -337,6 +339,7 @@
     background-size: cover;
     padding: 20px;
     margin-top: 30px;
+    overflow: hidden;
 }
 
 .seccion-us-5 .content-us-5 {

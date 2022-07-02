@@ -237,6 +237,7 @@
     .seccion-dom-dia .tit-dia h2 {
         font-size: 40px;
         padding: 10px;
+        text-align: center;
     }
 
     .seccion-dom-dia .card-dom-dia {
