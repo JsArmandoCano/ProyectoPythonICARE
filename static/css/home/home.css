@@ -159,76 +159,76 @@
 .avisos .bgPulse span:nth-child(1) {
     top: 50%;
     left: 20%;
-    animation: animate 10s linear infinite;
+    animation: cube 10s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(2) {
     top: 80%;
     left: 25%;
-    animation: animate 12s linear infinite;
+    animation: cube 12s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(3) {
     top: 10%;
     left: 65%;
-    animation: animate 15s linear infinite;
+    animation: cube 15s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(4) {
     top: 50%;
     left: 70%;
-    animation: animate 6s linear infinite;
+    animation: cube 6s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(5) {
     top: 10%;
     left: 30%;
-    animation: animate 9s linear infinite;
+    animation: cube 9s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(6) {
     top: 80%;
     left: 90%;
-    animation: animate 8s linear infinite;
+    animation: cube 8s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(7) {
     top: 80%;
     left: 5%;
-    animation: animate 5s linear infinite;
+    animation: cube 5s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(8) {
     top: 35%;
     left: 80%;
-    animation: animate 14s linear infinite;
+    animation: cube 14s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(9) {
     top: 5%;
     left: 5%;
-    animation: animate 11s linear infinite;
+    animation: cube 11s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(10) {
     top: 25%;
     left: 90%;
-    animation: animate 10s linear infinite;
+    animation: cube 10s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(11) {
     top: 90%;
     left: 70%;
-    animation: animate 10s linear infinite;
+    animation: cube 10s linear infinite;
 }
 
 .avisos .bgPulse span:nth-child(12) {
     top: 35%;
     left: 10%;
-    animation: animate 10s linear infinite;
+    animation: cube 10s linear infinite;
 }
 
-@keyframes animate {
+@keyframes cube {
     0% {transform: scale(0) translateY(0) rotate(0deg); opacity: 1;}
     100% {transform: scale(1) translateY(-100px) rotate(360deg); opacity: 0;}
 }
@@ -258,7 +258,7 @@
     height: 600px;
     margin-top: 40px;
     padding: 20px;
-    background-image: url(../images/fondo1.jpg);
+    background-image: url(../../images/fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

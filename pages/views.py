@@ -75,6 +75,21 @@ def dia(request, dia):
         'dia_select': dia_select,
         'dia_consulta': dia_consulta,
     })
+    
+
+def temas(request):
+    tema = TemasDom.objects.all().filter(is_available=True) 
+    paginator = Paginator(tema, 12)
+    page = request.GET.get('page')
+    page_temas = paginator.get_page(page) 
+    
+    return render(request, "pages/temas.html", {
+        'tema': page_temas,
+    })
+    
+    
+def dev_dia(request):
+    return render(request, 'pages/today.html')
 
     
 def vivo(request):

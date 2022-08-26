@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="titulo-tema">
+        <h2>Temas </h2>
+    </div>
+
+    <hr class="hr-temas">
+
+    <section class="section-temas">
+        {% for temas in tema %}
+            <div class="card-tema">
+                <div class="tema-img">
+                    <div class="img-tema-n">
+                        <img src="{{ temas.tema_image.url }}" alt="{{ temas.name_tema }}">
+                    </div>
+                    <div class="fecha-tema">
+                        <p>{{ temas.fecha }}</p>
+                    </div>
+                </div>
+                <div class="tema-title">
+                    <h3>{{ temas.name_tema }}</h3>
+                    <a href="{{ temas.pdf.url }}" download="download.pdf">Descargar</a>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+
+    {% if tema.has_other_pages %}
+    <section class="paginador">
+
+        {% if tema.has_previous %}
+            <a href="?page={{ tema.previous_page_number }}"><</a>
+        {% else %}
+            <a href="#" style="display: none;"><</a>
+        {% endif %}
+
+        {% for i in tema.paginator.page_range %}
+            {% if tema.number == i %}
+                <a href="#" class="active">{{i}}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if tema.has_next %}
+            <a href="?page={{ tema.next_page_number }}">></a>
+        {% else %}
+            <a href="#" style="display: none;">></a>
+        {% endif %}
+
+    </section>
+    {% endif %}
+    
+{% endblock %}

@@ -1,4 +1,3 @@
-from unicodedata import category
 from django.contrib import admin
 from .models import *
 
@@ -39,6 +38,16 @@ class DominicalesAdmin(admin.ModelAdmin):
     search_fields = ('name_dom', )
     list_filter = ('dia', 'is_available')
     
+class TemasAdmin(admin.ModelAdmin):
+    list_display = (
+        'name_tema',
+        'fecha',
+        'is_available',
+        'created_date',
+    )
+    search_fields = ('name_tema', )
+    list_filter = ('fecha', 'is_available')
+    
 class VivoAdmin(admin.ModelAdmin):
     list_display = (
         'name_vivo',
@@ -52,3 +61,4 @@ admin.site.register(Evento, EventoAdmin)
 admin.site.register(Avisos, AvisosAdmin)
 admin.site.register(Dominicales, DominicalesAdmin)
 admin.site.register(Vivo, VivoAdmin)
+admin.site.register(TemasDom, TemasAdmin)

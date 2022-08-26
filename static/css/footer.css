@@ -41,6 +41,10 @@ footer .redes a {
     transition: .5s all ease;
 }
 
+footer .redes a:nth-child(3) {
+    padding: 10px 12px;
+}
+
 footer .redes a:hover:nth-child(1) {
     background-color: #1877f2;
     border: 2px solid #1877f2;
@@ -49,6 +53,11 @@ footer .redes a:hover:nth-child(1) {
 footer .redes a:hover:nth-child(2) {
     background-color: #ff0000;
     border: 2px solid #ff0000;
+}
+
+footer .redes a:hover:nth-child(3) {
+    background-color: #0df853;
+    border: 2px solid #0df853;
 }
 
 footer .redes a i {
@@ -77,8 +86,12 @@ footer .redes a i {
     }
 
     footer .redes a {
-        padding: 10px;
-        margin-right: 15px;
+        padding: 7px;
+        margin-right: 10px;
+    }
+
+    footer .redes a:nth-child(3) {
+        padding: 7px 9px;
     }
 
     footer .redes a i {
@@ -109,7 +122,11 @@ footer .redes a i {
     footer .redes a {
         padding: 0;
         border: 0;
-        margin-right: 20px;
+        margin-right: 10px;
+    }
+
+    footer .redes a:nth-child(3) {
+        padding: 0;
     }
 
     footer .redes a i {

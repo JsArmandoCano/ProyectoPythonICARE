@@ -2,14 +2,14 @@ header .portada {
     position: relative;
 	width: 100%;
 	height: 600px;
-	background: url(../images/floresicare.jpg);
+	background: url(../../images/floresicare.jpg);
 	clip-path: polygon(0 0, 100% 0%, 100% 83%, 0% 100%);
 	background-size: 100%;
-	animation: movimiento 12s infinite linear alternate;
+	animation: sube-baja 12s infinite linear alternate;
 	background-repeat: no-repeat; 
 }
 
-@keyframes movimiento {
+@keyframes sube-baja {
 	from {
 		background-position: bottom left;
 	}
@@ -152,26 +152,26 @@ header .portada .capa .content-galery .item p {
     position: absolute;
     top: 10%;
     left: 10%;
-    animation: animate 4s linear infinite;
+    animation: burbujas 4s linear infinite;
 }
 
-.fotos .burbujas:nth-child(1){ top: 20%; left: 20%; animation: animate 8s linear infinite; }
-.fotos .burbujas:nth-child(2){ top: 60%; left: 80%; animation: animate 10s linear infinite; }
-.fotos .burbujas:nth-child(3){ top: 40%; left: 40%; animation: animate 5s linear infinite; }
-.fotos .burbujas:nth-child(4){ top: 66%; left: 30%; animation: animate 7s linear infinite; }
-.fotos .burbujas:nth-child(5){ top: 90%; left: 10%; animation: animate 9s linear infinite; }
-.fotos .burbujas:nth-child(6){ top: 30%; left: 60%; animation: animate 5s linear infinite; }
-.fotos .burbujas:nth-child(7){ top: 70%; left: 20%; animation: animate 8s linear infinite; }
-.fotos .burbujas:nth-child(8){ top: 75%; left: 60%; animation: animate 10s linear infinite; }
-.fotos .burbujas:nth-child(9){ top: 50%; left: 50%; animation: animate 10s linear infinite; }
-.fotos .burbujas:nth-child(10){ top: 45%; left: 20%; animation: animate 10s linear infinite; }
-.fotos .burbujas:nth-child(11){ top: 10%; left: 90%; animation: animate 9s linear infinite; }
-.fotos .burbujas:nth-child(12){ top: 20%; left: 70%; animation: animate 7s linear infinite; }
-.fotos .burbujas:nth-child(13){ top: 20%; left: 20%; animation: animate 8s linear infinite; }
-.fotos .burbujas:nth-child(14){ top: 60%; left: 5%; animation: animate 6s linear infinite; }
-.fotos .burbujas:nth-child(15){ top: 90%; left: 80%; animation: animate 9s linear infinite; }
+.fotos .burbujas:nth-child(1){ top: 20%; left: 20%; animation: burbujas 8s linear infinite; }
+.fotos .burbujas:nth-child(2){ top: 60%; left: 80%; animation: burbujas 10s linear infinite; }
+.fotos .burbujas:nth-child(3){ top: 40%; left: 40%; animation: burbujas 5s linear infinite; }
+.fotos .burbujas:nth-child(4){ top: 66%; left: 30%; animation: burbujas 7s linear infinite; }
+.fotos .burbujas:nth-child(5){ top: 90%; left: 10%; animation: burbujas 9s linear infinite; }
+.fotos .burbujas:nth-child(6){ top: 30%; left: 60%; animation: burbujas 5s linear infinite; }
+.fotos .burbujas:nth-child(7){ top: 70%; left: 20%; animation: burbujas 8s linear infinite; }
+.fotos .burbujas:nth-child(8){ top: 75%; left: 60%; animation: burbujas 10s linear infinite; }
+.fotos .burbujas:nth-child(9){ top: 50%; left: 50%; animation: burbujas 10s linear infinite; }
+.fotos .burbujas:nth-child(10){ top: 45%; left: 20%; animation: burbujas 10s linear infinite; }
+.fotos .burbujas:nth-child(11){ top: 10%; left: 90%; animation: burbujas 9s linear infinite; }
+.fotos .burbujas:nth-child(12){ top: 20%; left: 70%; animation: burbujas 7s linear infinite; }
+.fotos .burbujas:nth-child(13){ top: 20%; left: 20%; animation: burbujas 8s linear infinite; }
+.fotos .burbujas:nth-child(14){ top: 60%; left: 5%; animation: burbujas 6s linear infinite; }
+.fotos .burbujas:nth-child(15){ top: 90%; left: 80%; animation: burbujas 9s linear infinite; }
 
-@keyframes animate {
+@keyframes burbujas {
     0% { transform: scale(0) translateY(0) rotate(70deg); }
     100% { transform: scale(1.3) translateY(-100px) rotate(360deg); }
 }

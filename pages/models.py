@@ -1,11 +1,10 @@
-from audioop import reverse
-from distutils.command.upload import upload
+from email.policy import default
 from django.db import models
 from django.urls import reverse
 
 # Create your models here.
 class Category(models.Model):
-    category_name = models.CharField('Nombre de la Caategoria:', max_length=50, unique=True)
+    category_name = models.CharField('Nombre de la Categoria:', max_length=50, unique=True)
     description = models.CharField('Descripción:', max_length=255, blank=True)
     slug = models.CharField(max_length=50, unique=True)
     
@@ -80,13 +79,29 @@ class Dominicales(models.Model):
     audio = models.FileField('Audio:', upload_to='audio/audios', blank=False)
     is_available = models.BooleanField('Activo?',default=True)
     created_date = models.DateTimeField(auto_now_add=True)
-    
+        
     class Meta:
         verbose_name = 'Dominical'   
         verbose_name_plural = 'Dominicales'
     
     def __str__(self):
         return self.name_dom
+    
+
+class TemasDom(models.Model):
+    name_tema = models.CharField('Tema', max_length=60, blank=False)
+    tema_image = models.ImageField('Imagen:', upload_to='photos/fotos', blank=False, default=None)
+    fecha = models.DateField('Fecha:')
+    pdf = models.FileField('Pdf:', upload_to='pdf/pdfs', blank=False)
+    is_available = models.BooleanField('Activo?',default=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        verbose_name = 'Tema'   
+        verbose_name_plural = 'Temas'
+    
+    def __str__(self):
+        return self.name_tema
     
     
 class Vivo(models.Model):

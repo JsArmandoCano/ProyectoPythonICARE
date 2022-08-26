@@ -1,0 +1,173 @@
+.titulo-tema {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-tema h2 {
+    font-size: 60px;
+    color: #5095F5;
+}
+
+hr.hr-temas {
+    height: 5px;
+    background-color: #5095F5;
+}
+
+.section-temas {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.section-temas .card-tema {
+    width: 300px;
+    height: 400px;
+    border-radius: 40px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-temas .card-tema .tema-img {
+    position: relative;
+    width: 100%;
+    height: 60%;
+}
+
+.section-temas .card-tema .tema-img .img-tema-n {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-temas .card-tema .tema-img .img-tema-n img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-temas .card-tema .tema-img .fecha-tema {
+    position: absolute;
+    bottom: 10px;   
+    left: 95px;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-temas .card-tema .tema-title {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.section-temas .card-tema .tema-title h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-temas .card-tema .tema-title a {
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 2px solid blue;
+    color: blue;
+    transition: .5s all ease;
+}
+
+.section-temas .card-tema .tema-title a:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+
+@media (max-width: 991px) {
+    .section-temas {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .titulo-tema {
+        height: 80px;
+    }
+    
+    .titulo-tema h2 {
+        font-size: 50px;
+    }
+
+    .section-temas {
+        padding: 5px;
+    }
+    
+    .section-temas .card-tema {
+        height: 350px;
+        margin: 5px;
+    }
+    
+    .section-temas .card-tema .tema-img .fecha-tema {
+        left: 85px;
+    }
+    
+    .section-temas .card-tema .tema-title h3 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:370px) {
+    .titulo-tema {
+        height: 60px;
+    }
+    
+    .titulo-tema h2 {
+        font-size: 40px;
+    }
+    
+    .section-temas .card-tema {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .section-temas .card-tema .tema-img {
+        height: 50%;
+    }
+    
+    .section-temas .card-tema .tema-img .fecha-tema {
+        left: 45px;
+    }
+    
+    .section-temas .card-tema .tema-title {
+        height: 50%;
+        padding: 5px;
+    }
+    
+    .section-temas .card-tema .tema-title h3 {
+        font-size: 18px;
+    }
+    
+    .section-temas .card-tema .tema-title a {
+        font-size: 14px;
+        padding: 7px 12px;
+    }
+}
